@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".Results">
+
+<TextView
+android:id="@+id/question_nr_1"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginStart="32dp"
+android:layout_marginTop="150dp"
+android:text="@string/question_nr_1"
+android:textSize="18sp"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toTopOf="parent" />
+
+<TextView
+android:id="@+id/question_nr_2"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginStart="32dp"
+android:layout_marginTop="110dp"
+android:text="@string/question_nr_2"
+android:textSize="18sp"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/question_nr_1" />
+
+<TextView
+android:id="@+id/question_nr_3"
+android:layout_width="wrap_content"
+android:layout_height="wrap_content"
+android:layout_marginStart="32dp"
+android:layout_marginTop="110dp"
+android:text="@string/question_nr_3"
+android:textSize="18sp"
+app:layout_constraintStart_toStartOf="parent"
+app:layout_constraintTop_toBottomOf="@+id/question_nr_2" />
+
+    <TextView
+        android:id="@+id/result_q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/result_q1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/question_nr_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/result_q2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/result_q2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/question_nr_2"
+        app:layout_constraintTop_toBottomOf="@+id/result_q1" />
+
+    <TextView
+        android:id="@+id/result_q3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/result_q3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/question_nr_3"
+        app:layout_constraintTop_toBottomOf="@+id/result_q2" />
+
+    <TextView
+        android:id="@+id/final_result"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="50dp"
+        android:text="@string/final_result"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:id="@+id/results"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/results"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

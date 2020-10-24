@@ -1,0 +1,241 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:backgroundTint="#FFEB3B"
+    tools:context=".Quiz">
+
+    <TextView
+        android:id="@+id/question_nr_1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/question_nr_1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/question_nr_2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/question_nr_2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_nr_1" />
+
+    <TextView
+        android:id="@+id/question_nr_3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/question_nr_3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/question_nr_2" />
+
+    <TextView
+        android:id="@+id/title_quiz"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:text="@string/title_quiz"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/number1_q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/number1_q1"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toStartOf="@+id/sum"
+        app:layout_constraintStart_toEndOf="@+id/question_nr_1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/sum"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/sum"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/number1_q1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/number2_q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/number2_q1"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/sum"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/answer_q1"
+        android:layout_width="85dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="145dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/answer"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/equal_q1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/equal_q1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="150dp"
+        android:text="@string/equal"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/number2_q1"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/number1_q2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/number1_q2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/question_nr_2"
+        app:layout_constraintTop_toBottomOf="@+id/number1_q1" />
+
+    <TextView
+        android:id="@+id/subtract"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="13dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/subract"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/number1_q2"
+        app:layout_constraintTop_toBottomOf="@+id/sum" />
+
+    <TextView
+        android:id="@+id/number2_q2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="11dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/number2_q2"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/subtract"
+        app:layout_constraintTop_toBottomOf="@+id/number2_q1" />
+
+    <TextView
+        android:id="@+id/equal_q2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/equal"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/number2_q2"
+        app:layout_constraintTop_toBottomOf="@+id/equal_q1" />
+
+    <EditText
+        android:id="@+id/answer_q2"
+        android:layout_width="85dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="95dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/answer"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/equal_q2"
+        app:layout_constraintTop_toBottomOf="@+id/answer_q1" />
+
+    <TextView
+        android:id="@+id/number1_q3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/number1_q3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/question_nr_3"
+        app:layout_constraintTop_toBottomOf="@+id/number1_q2" />
+
+    <TextView
+        android:id="@+id/multiply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/multiply"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/number1_q3"
+        app:layout_constraintTop_toBottomOf="@+id/subtract" />
+
+    <TextView
+        android:id="@+id/number2_q3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/number2_q3"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/multiply"
+        app:layout_constraintTop_toBottomOf="@+id/number2_q2" />
+
+    <TextView
+        android:id="@+id/equal_q3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="110dp"
+        android:text="@string/equal"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/number2_q3"
+        app:layout_constraintTop_toBottomOf="@+id/equal_q2" />
+
+    <EditText
+        android:id="@+id/answer_q3"
+        android:layout_width="85dp"
+        android:layout_height="38dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="95dp"
+        android:autofillHints=""
+        android:ems="10"
+        android:hint="@string/answer"
+        android:inputType="number"
+        android:textSize="18sp"
+        app:layout_constraintStart_toEndOf="@+id/equal_q3"
+        app:layout_constraintTop_toBottomOf="@+id/answer_q2" />
+
+    <Button
+        android:id="@+id/submit_button"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="44dp"
+        android:text="@string/submit_button"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="submitAnswers"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
